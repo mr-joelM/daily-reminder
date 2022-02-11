@@ -1,5 +1,5 @@
-import smtplib
-import ssl
+# import smtplib
+# import ssl
 
 with open("peak.txt", "w") as file:
     file.write("Hello Peak!")
