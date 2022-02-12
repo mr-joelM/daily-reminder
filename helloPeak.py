@@ -1,8 +1,8 @@
 import smtplib
 import ssl
 
-with open("peak.txt", "w") as file:
-    file.write("Hello Peak!")
+# with open("peak.txt", "w") as file:
+#     file.write("Hello Peak!")
 
 
 def read_creds():
@@ -25,7 +25,7 @@ Hello Tim,
 This is your 07.45 morning message 'Hello Peak!'
 Have a good day! :)
 Best regards,
-Joel 
+Joel
 """
 
 context = ssl.create_default_context()
@@ -33,3 +33,5 @@ context = ssl.create_default_context()
 with smtplib.SMTP_SSL("smpt.gmail.com", port, context=context) as server:
     server.login(sender, password)
     server.sendmail(sender, receiver, message)
+
+print("Hello Peak!")
