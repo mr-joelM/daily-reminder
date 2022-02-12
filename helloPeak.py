@@ -31,7 +31,7 @@
 #     server.login(sender, password)
 #     server.sendmail(sender, receiver, message)
 
-with open("message.txt", "a") as file:
+with open("message.txt", "w") as file:
     file.write("Hello Peak!")
     file.close()
 
