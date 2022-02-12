@@ -33,5 +33,6 @@
 
 with open("message.txt", "a") as file:
     file.write("Hello Peak!")
+    file.close()
 
-print("Hello Peak!")
+print("Hello Peak!!")
